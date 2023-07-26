@@ -46,11 +46,92 @@
 
 /* FOOTER SECTION CSS STARTS HERE */
 
-/* footer1 container starts here */
 
+/* footer1 container starts here */
+/*.container{
+  min-height: 50vh;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas:"footer1-container";
+}*/
+.footer1-container{
+  min-height: 50vh;
+  background-color: rgb(159, 118, 240);
+text-align: center;}
+#get-started{
+ background-color: aquamarine;
+ border-color: aquamarine;
+ border-radius: 20px;
+ width: 100px;
+ height: 10%;
+}
+#get-started:hover{
+  background-color: aliceblue;
+  border-color: aliceblue;
+  color: #000; 
+}
 /* footer1 container ends here */
 
-/* footer2 container starts here */
+/* footer2 container starts here 
+.container{
+  min-height: 50vh;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas:"row";
+}*/
+.row{
+  display: flex;
+  background-color: rgb(29, 0, 29);
+  color: aliceblue;
+  padding-right: 10rem;
+  padding-left: 4rem;
+  grid-area: row;
+  min-height: 50vh;
+ 
+}
+.column{
+  /*float: left;
+  width: 20%;*/
+  display: block;
+  width: 100%;
+}
+#col-1a:hover{
+  color: aqua;
+}
+#col-1b:hover{
+  color: aqua;
+}
+#col-1c:hover{
+  color: aqua;}
+.socials{
+ display: flex;
+ gap: 40px;
+}
+.so1 .fa-facebook-official:hover{
+  color: aqua !important;
+  }
+  .so2 .fa-twitter:hover{
+    color: aqua !important;
+  }
+  .so3 .fa-pinterest:hover{
+   color: aqua !important;
+  }
+  .so4 .fa-instagram:hover{
+    color: aqua !important;
+  }  
+
+/*
+.column{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  min-height: 50vh;
+  background-color: rgb(29, 0, 29);
+color: aliceblue;
+}*/
 
 /* footer2 container ends here */
 
@@ -93,12 +174,36 @@
 
 
 /* FOOTER SECTION CSS STARTS HERE */
-
+ 
+ 
+  
+ 
 /* footer1 container starts here */
-
+@media screen and (max-width:460px){
+    .footer1-container{
+      font-size: 1.5rem;
+      height: 50vh;
+    }
+    #get-started{
+      background-color: aquamarine;
+      border-color: aquamarine;
+      border-radius: 30px;
+      width: 100px;
+      color: maroon;
+  }
+  h1{
+    color: #000;
+  }
+  }
+  
 /* footer1 container ends here */
 
 /* footer2 container starts here */
-/* footer2 container ends here */
-
-/* FOOTER SECTION CSS ENDS HERE */
+@media only screen and (max-width: 460px){
+    .row{
+      display: grid;
+      grid-column: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "column";
+    }
+    }
