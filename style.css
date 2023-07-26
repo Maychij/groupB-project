@@ -179,7 +179,7 @@ color: aliceblue;
   
  
 /* footer1 container starts here */
-@media screen and (max-width:460px){
+@media screen and (max-width:375px){
     .footer1-container{
       font-size: 1.5rem;
       height: 50vh;
@@ -199,7 +199,7 @@ color: aliceblue;
 /* footer1 container ends here */
 
 /* footer2 container starts here */
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 375px){
     .row{
       display: grid;
       grid-column: 1fr;
